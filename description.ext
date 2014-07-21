@@ -1,0 +1,28 @@
+/* Adds screen when loading. */
+author = S3 Operation;
+onLoadName = "Operation Urban Terror";
+loadScreen = "MissionLogo.jpg";
+OnLoadMission = "";
+
+class Header
+{
+  gameType = COOP;
+  minPlayers = 1;
+  maxPlayers = 40;
+};
+
+respawn = 3;
+respawndelay = 10;
+disabledAI=1;
+
+#include "taw_vd\dialog.hpp"
+#include "outlw_magRepack\MagRepack_config.hpp"
+
+class RscTitles {
+	#include "scripts\ais_injury\dialogs\rscTitlesAIS.hpp"
+};
+class CfgFunctions {
+	#include "scripts\ais_injury\cfgFunctionsAIS.hpp"
+	#include "taw_vd\CfgFunctions.hpp"
+	#include "EPD\EPDcfgFunctions.hpp"
+};
