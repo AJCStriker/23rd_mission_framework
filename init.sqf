@@ -15,3 +15,4 @@ if (!isDedicated) then {
 [] spawn {call compile preprocessFileLineNumbers "EPD\Ied_Init.sqf";};
 _igiload = execVM "IgiLoad\IgiLoadInit.sqf";
 
+DAC_Basic_Value = 0;execVM "DAC\DAC_Config_Creator.sqf";
